@@ -22,7 +22,6 @@ RUN yum -y update && \
 COPY ./install-package.sh /tmp/install-package.sh
 COPY ./db_install.rsp /tmp/db_install.rsp
 COPY startup.sh /usr/local/bin/startup.sh
-COPY scripts /home/oracle/sql_scripts
 
 # Dar permiso de ejecución a los scripts
 RUN chmod +x /tmp/install-package.sh /usr/local/bin/startup.sh /home/oracle/sql_scripts/config_database.sh /home/oracle/sql_scripts/startup_database.sh
