@@ -13,7 +13,7 @@ Verifica si Docker está ejecutándose
 docker info
 ```
 
-**Si hay contexión con Docker sigue los siguientes pasos:**
+*Si hay contexión con Docker sigue los siguientes pasos:*
 
 Contruir la Imagen Docker
 ```bash
@@ -59,8 +59,8 @@ docker rm oracle-db
 sqlplus sys/your_password@localhost:1521/XE as sysdba
 ```
 *VARIABLES*
--Hostname: localhost
--Port: 1521
--SID: XE
--Username: tu_usuario
--Password: tu_contraseña
+- Hostname: localhost
+- Port: 1521
+- SID: XE
+- Username: tu_usuario
+- Password: tu_contraseña
