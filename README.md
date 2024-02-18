@@ -29,6 +29,13 @@ Ejecutar el contenedor
 docker run -d -p 1521:1521 --name oracle-db oracle-21c-xe
 ```
 
+Revisar la inicialización de la base de datos
+```bash
+docker logs -f oracle-db
+```
+***Esto puede tardar varios minutos***, pero debes esperar hasta que cargue por completo y veas algo como esto: <br />
+<img src='./static/imgs/ODBS21cXELogger-Screenshot.png'><img>
+
 ## Comandos Importantes
 
 Verificar el contenedor
@@ -60,11 +67,11 @@ docker rm oracle-db
 Conectarse a la Base de Datos de Oracle como el SYS_DBA
 *Desde el CLI en la terminal*
 ```bash
-sqlplus sys/your_password@localhost:1521/XE as sysdba
+sqlplus sys/SYS_DBA_ADMIN_UTN@XE as sysdba
 ```
 **VARIABLES**
-- Hostname: localhost
+- Tipo: SYS_DBA
 - Port: 1521
 - SID: XE
-- Username: tu_usuario
-- Password: tu_contraseña
+- Username: sys
+- Password: SYS_DBA_ADMIN_UTN
