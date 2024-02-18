@@ -2,7 +2,7 @@
 
 ## Prerequisitos
 
-- Instalar WSL en caso de windows `wsl --install`
+- Instalar WSL en caso de windows (en la terminal `wsl --install`)
 - Instalar [Docker](https://docs.docker.com/get-docker/)
 - Descargar [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
 
@@ -16,7 +16,7 @@ docker info
 
 *Si hay contexión con Docker sigue los siguientes pasos:*
 
-Arrastrar el `.rpm` de **Oracle Database 21c Express Edition for Linux x64 ( OL8 )** en la carpeta raíz, debería quedar algo así: <br />
+Arrastrar el `.rpm` de ***Oracle Database 21c Express Edition for Linux x64 ( OL8 )*** en la carpeta raíz, debería quedar algo así: <br />
 <img src='./static/imgs/ODBS21cXE-Screenshot.png'><img>
 
 Contruir la imagen docker
