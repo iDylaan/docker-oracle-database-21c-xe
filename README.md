@@ -1,4 +1,5 @@
 # Docker con Oracle Database 21c Express Edition
+Se trata de un Docker Image lista para usar que contiene la base de datos Oracle 21c XE sobre Oracle Linux 8.4
 
 ## Prerequisitos
 
@@ -24,7 +25,7 @@ Contruir la imagen docker
 docker build -t oracle-21c-xe .
 ```
 
-Ejecutar el contenedor
+Ejecutar el contenedor por primera vez
 ```bash
 docker run -d -p 1521:1521 --name oracle-db oracle-21c-xe
 ```
@@ -36,7 +37,13 @@ docker logs -f oracle-db
 ***Esto puede tardar varios minutos***, pero debes esperar hasta que cargue por completo y veas algo como esto: <br />
 <img src='./static/imgs/ODBS21cXELogger-Screenshot.png'><img>
 
-**¡Listo!** Ya puedes conectarse desde tu IDE preferido a Oracle Database 21c Express Edition.
+**¡Listo!** Ya puedes conectarse desde tu IDE preferido a Oracle Database 21c Express Edition, ya puedes cerrar la terminal.
+
+Para iniciar nuevamente el contenedor
+*Esto se usa una vez detienes el contenedor y lo quieres volver a iniciar*
+```bash
+docker start oracle-db
+```
 
 ## Comandos Importantes
 
