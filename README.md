@@ -3,8 +3,8 @@
 ## Prerequisitos
 
 - Instalar WSL en caso de windows
-- Instalar Docker
-- Descargar Oracle Database 21c Express Edition for Linux x64 ( OL8 ) - https://www.oracle.com/mx/database/technologies/xe-downloads.html
+- Instalar [Docker](https://docs.docker.com/get-docker/)
+- Descargar [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
 
 ## Pasos para ejecutar el docker
 
@@ -12,8 +12,12 @@ Verifica si Docker está ejecutándose
 ```bash
 docker info
 ```
+Si no lo está, reiniciar el equipo y comprueba nuevamente.
 
 *Si hay contexión con Docker sigue los siguientes pasos:*
+
+Arrastrar el `.rpm` de *Oracle Database 21c Express Edition for Linux x64 ( OL8 )* en la carpeta raíz, debería quedar algo así:
+<img src='./static/imgs/ODBS21cXE-Screenshot.png'><img>
 
 Contruir la Imagen Docker
 ```bash
@@ -58,7 +62,7 @@ docker rm oracle-db
 ```bash
 sqlplus sys/your_password@localhost:1521/XE as sysdba
 ```
-*VARIABLES*
+**VARIABLES**
 - Hostname: localhost
 - Port: 1521
 - SID: XE
