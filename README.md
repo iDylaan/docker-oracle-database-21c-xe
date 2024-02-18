@@ -2,7 +2,7 @@
 
 ## Prerequisitos
 
-- Instalar WSL en caso de windows (en la terminal `wsl --install`)
+- Instalar WSL en caso de windows `wsl --install`
 - Instalar [Docker](https://docs.docker.com/get-docker/)
 - Descargar [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
 
@@ -35,6 +35,8 @@ docker logs -f oracle-db
 ```
 ***Esto puede tardar varios minutos***, pero debes esperar hasta que cargue por completo y veas algo como esto: <br />
 <img src='./static/imgs/ODBS21cXELogger-Screenshot.png'><img>
+
+**¡Listo!** Ya puedes conectarse desde tu IDE preferido a Oracle Database 21c Express Edition.
 
 ## Comandos Importantes
 
