@@ -26,7 +26,7 @@ docker info
 _Si hay contexión con Docker sigue los siguientes pasos:_
 
 1. Descargar el proyecto desde el [repositorio de Github](https://github.com/iDylaan/docker-oracle-database-21c-xe)
-![](./static/imgs/DownloadPorject.png)
+![](./static/imgs/DownloadPorject.png) y descomprimelo (con esta carpeta nos referimos al proyecto)
 
 2. Descargar [Oracle Database 21c Express Edition for Linux x64 (OL8)](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
    
