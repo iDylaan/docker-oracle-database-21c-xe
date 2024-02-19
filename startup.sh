@@ -18,21 +18,23 @@ if [ -f "/opt/oracle/config/.oracle_configured" ]; then
     echo "Oracle Database ya está configurada, omitiendo la configuración inicial."
 
     # Ejecutar comandos como el usuario oracle
-    su - oracle -c "bash -c ' 
+    su - oracle -c "bash -c '
 echo \"Configurando entorno Oracle\"
-echo 'export ORACLE_HOME=/opt/oracle/product/21c/dbhomeXE' >> ~/.bashrc
-echo 'export LD_LIBRARY_PATH=\$ORACLE_HOME/lib' >> ~/.bashrc
-echo 'export PATH=\$ORACLE_HOME/bin:\$PATH' >> ~/.bashrc
-echo 'export TNS_ADMIN=\$ORACLE_HOME/network/admin'>> ~/.bashrc
+export ORACLE_HOME=/opt/oracle/product/21c/dbhomeXE
+export LD_LIBRARY_PATH=\$ORACLE_HOME/lib
+export PATH=\$ORACLE_HOME/bin:\$PATH
+export TNS_ADMIN=\$ORACLE_HOME/network/admin
+export ORACLE_SID=XE
 
-# Aplicar las configuraciones de entorno sin necesidad de reiniciar la sesión
-source ~/.bashrc
+echo \"export ORACLE_HOME=/opt/oracle/product/21c/dbhomeXE\" >> ~/.bashrc
+echo \"export LD_LIBRARY_PATH=\$ORACLE_HOME/lib\" >> ~/.bashrc
+echo \"export PATH=\$ORACLE_HOME/bin:\$PATH\" >> ~/.bashrc
+echo \"export TNS_ADMIN=\$ORACLE_HOME/network/admin\" >> ~/.bashrc
+
+# No es necesario llamar a source ~/.bashrc aquí, ya que las variables ya están exportadas para esta sesión
 
 # Iniciar el listener de Oracle
 lsnrctl start
-
-# Configurar ORACLE_SID
-export ORACLE_SID=XE
 
 # Conectar a SQL*Plus y ejecutar comandos SQL
 sqlplus / as sysdba <<EOF
