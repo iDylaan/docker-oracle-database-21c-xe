@@ -10,7 +10,7 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 - Tener instalado [Docker](https://docs.docker.com/get-docker/)
     - En Windows ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
     - En MacOS ([Guía](https://www.youtube.com/watch?v=a30Enh1_aWI))
-- Tener descargado [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
+- Tener descargado el .rpm [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
 
 ## Ejecutar Contenedor en Docker
 
