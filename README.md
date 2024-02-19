@@ -28,15 +28,15 @@ _Si hay contexión con Docker sigue los siguientes pasos:_
 1. Descargar el proyecto desde el [repositorio de Github](https://github.com/iDylaan/docker-oracle-database-21c-xe)
 ![](./static/imgs/DownloadPorject.png)
 
-1. Descargar [Oracle Database 21c Express Edition for Linux x64 (OL8)](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
+2. Descargar [Oracle Database 21c Express Edition for Linux x64 (OL8)](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
    
-2. Ubicar el archivo RPM descargado en tu proyecto:
+3. Ubicar el archivo RPM descargado en tu proyecto:
    Una vez descargado el archivo `oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm`, deberás colocarlo en la carpeta raíz de tu proyecto. Esto permitirá que el `Dockerfile` lo utilice durante el proceso de construcción de la imagen.
    ![](./static/imgs/ODBS21cXE-Screenshot.png)
 
 **_Es necesario ejecutar los comandos desde la ruta raiz del proyecto, donde se encuentra el Dockerfile_**
 
-3. Contruir la imagen docker
+4. Contruir la imagen docker
 
 ```bash
 docker build -t oracle-21c-xe .
@@ -44,13 +44,13 @@ docker build -t oracle-21c-xe .
 
 <img src='./static/imgs/DockerBuildBASH.png'><img>
 
-4. Ejecutar el contenedor por primera vez
+5. Ejecutar el contenedor por primera vez
 
 ```bash
 docker run -d -p 1521:1521 --name oracle-db oracle-21c-xe
 ```
 
-5. Revisar la inicialización de la base de datos
+6. Revisar la inicialización de la base de datos
 
 ```bash
 docker logs -f oracle-db
@@ -61,7 +61,7 @@ docker logs -f oracle-db
 
 **¡Listo!** Ya puedes conectarse desde tu IDE preferido a Oracle Database 21c Express Edition, ya puedes cerrar la terminal.
 
-6. Para iniciar nuevamente el contenedor
+7. Para iniciar nuevamente el contenedor
 _Esto se usa una vez detienes el contenedor y lo quieres volver a iniciar_
 
 ```bash
