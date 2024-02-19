@@ -75,7 +75,7 @@ docker start oracle-db
 # **VARIABLES DE CONEXIÓN**
 (Considera el puerto cambiado en caso de que lo hayas cambiado en el paso ***5***)
 
-- Tipo: SYS_DBA
+- Rol: SYSDBA
 - Port: 1521
 - SID: XE
 - Username: sys
