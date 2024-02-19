@@ -16,12 +16,8 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 ## Ejecutar Contenedor en Docker
 
 Verifica si Docker Engine se está ejecutándose
-_Se ejecuta cuando inicias Docker Desktop_
-![](./static/imgs/MACDockerEngineRunning.png)
-
-```bash
-docker info
-```
+_Se ejecuta cuando inicias el programa de Docker Desktop_
+![](./static/imgs/DockerEngineRunning.png)
 
 **Si no lo está, reiniciar el equipo y comprueba nuevamente.**
 
