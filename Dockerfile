@@ -15,8 +15,7 @@ RUN chmod +x /tmp/install-package.sh /usr/local/bin/startup.sh
 RUN /tmp/install-package.sh
 
 # Instalar las herramientas necesarias y limpiar la caché de yum en un solo paso
-RUN yum -y install oracle-database-preinstall-21c && \
-    yum -y localinstall /tmp/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm && \
+RUN yum -y localinstall /tmp/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm && \
     yum clean all && \
     rm -f /tmp/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm && \
     rm -f /tmp/install-package.sh

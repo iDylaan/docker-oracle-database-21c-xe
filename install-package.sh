@@ -6,7 +6,8 @@
 yum -y update
 
 # Instalar utilidades útiles y dependencias requeridas por Oracle
-yum -y install wget \
+yum -y install oracle-database-preinstall-21c \
+               wget \
                unzip \
                tar \
                bc \
