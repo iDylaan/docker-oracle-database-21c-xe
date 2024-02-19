@@ -6,7 +6,7 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 
 - Almenos 4 GB de RAM
 - Almenos 25 GB de almacenamiento disponible
-- Tener instalado WSL -> en caso de windows `wsl --install`
+- Tener instalado WSL -> en caso de windows `wsl --install` ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
 - Tener instalado [Docker](https://docs.docker.com/get-docker/)
 - Tener descargado [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
 
@@ -24,12 +24,13 @@ docker info
 Arrastrar el `.rpm` de ***Oracle Database 21c Express Edition for Linux x64 ( OL8 )*** en la carpeta raíz, debería quedar algo así: <br />
 <img src='./static/imgs/ODBS21cXE-Screenshot.png'><img>
 
-`Ejecutar los comandos desde la ruta raiz del proyecto, donde se encuentra el Dockerfile`
+***Es necesario ejecutar los comandos desde la ruta raiz del proyecto, donde se encuentra el Dockerfile***
 
 Contruir la imagen docker
 ```bash
 docker build -t oracle-21c-xe .
 ```
+<img src='./static/imgs/DockerBuildBASH.png'><img>
 
 Ejecutar el contenedor por primera vez
 ```bash
@@ -50,6 +51,13 @@ Para iniciar nuevamente el contenedor
 ```bash
 docker start oracle-db
 ```
+
+# **VARIABLES DE CONEXIÓN**
+- Tipo: SYS_DBA
+- Port: 1521
+- SID: XE
+- Username: sys
+- Password: SYS_DBA_ADMIN_UTN
 
 ## Comandos Importantes
 
@@ -84,9 +92,3 @@ Conectarse a la Base de Datos de Oracle como el SYS_DBA
 ```bash
 sqlplus sys/SYS_DBA_ADMIN_UTN@XE as sysdba
 ```
-**VARIABLES**
-- Tipo: SYS_DBA
-- Port: 1521
-- SID: XE
-- Username: sys
-- Password: SYS_DBA_ADMIN_UTN
