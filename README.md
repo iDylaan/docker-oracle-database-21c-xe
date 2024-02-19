@@ -24,6 +24,8 @@ docker info
 Arrastrar el `.rpm` de ***Oracle Database 21c Express Edition for Linux x64 ( OL8 )*** en la carpeta raíz, debería quedar algo así: <br />
 <img src='./static/imgs/ODBS21cXE-Screenshot.png'><img>
 
+`Ejecutar los comandos desde la ruta raiz del proyecto, donde se encuentra el Dockerfile`
+
 Contruir la imagen docker
 ```bash
 docker build -t oracle-21c-xe .
