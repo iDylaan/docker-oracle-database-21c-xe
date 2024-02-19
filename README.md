@@ -3,7 +3,7 @@
 Se trata de un Docker Image lista para usar que contiene la base de datos Oracle 21c XE sobre Oracle Linux 8.4
 El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instala con otro software.
 
-## Prerequisitos
+## Requisitos
 
 - Almenos 4 GB de RAM
 - Almenos 25 GB de almacenamiento disponible
@@ -11,6 +11,14 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
   - En Windows ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
   - En MacOS ([Guía](https://www.youtube.com/watch?v=a30Enh1_aWI))
 - Tener instalado [Docker Desktop](https://docs.docker.com/get-docker/)
+
+## Requisitos (MacOS)
+- Instalar el gestor de paquetes [Homebrew](https://brew.sh/es/)
+- Instalar con Homebrew [colima](https://formulae.brew.sh/formula/colima)
+- Ejecutar el siguiente comando una vez instalados:
+```bash
+$ colima start --arch x86_64 --memory 4
+```
 
 
 ## Ejecutar Contenedor en Docker
