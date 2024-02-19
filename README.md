@@ -1,8 +1,11 @@
 # Docker con Oracle Database 21c Express Edition
 Se trata de un Docker Image lista para usar que contiene la base de datos Oracle 21c XE sobre Oracle Linux 8.4
+El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instala con otro software.
 
 ## Prerequisitos
 
+- Almenos 4 GB de RAM
+- 25 GB de almacenamiento disponible
 - Instalar WSL en caso de windows `wsl --install`
 - Instalar [Docker](https://docs.docker.com/get-docker/)
 - Descargar [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
