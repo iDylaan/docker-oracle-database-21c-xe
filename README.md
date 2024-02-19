@@ -6,7 +6,9 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 
 - Almenos 4 GB de RAM
 - Almenos 25 GB de almacenamiento disponible
-- Tener instalado WSL -> en caso de windows `wsl --install` ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
+- Tener instalado WSL
+    - En Windows `wsl --install` ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
+    - En MacOS `wsl --install` ([Guía](https://www.youtube.com/watch?v=a30Enh1_aWI))
 - Tener instalado [Docker](https://docs.docker.com/get-docker/)
 - Tener descargado [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
 
@@ -59,7 +61,7 @@ docker start oracle-db
 - Username: sys
 - Password: SYS_DBA_ADMIN_UTN
 
-## Comandos Importantes
+## Comandos Utiles
 
 Verificar el contenedor
 ```bash
