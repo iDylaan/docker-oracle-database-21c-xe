@@ -16,6 +16,7 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 
 Verifica si Docker Engine se está ejecutándose
 _Se ejecuta cuando inicias Docker Desktop_
+![](./static/imgs/MACDockerEngineRunning.png)
 
 ```bash
 docker info
@@ -41,8 +42,7 @@ _Si hay contexión con Docker sigue los siguientes pasos:_
 ```bash
 docker build -t oracle-21c-xe .
 ```
-
-<img src='./static/imgs/DockerBuildBASH.png'><img>
+![](./static/imgs/DockerBuildBASH.png)
 
 5. Ejecutar el contenedor por primera vez
 
@@ -57,7 +57,8 @@ docker logs -f oracle-db
 ```
 
 **_Esto puede tardar varios minutos_**, pero debes esperar hasta que cargue por completo y veas algo como esto: <br />
-<img src='./static/imgs/ODBS21cXELogger-Screenshot.png'><img>
+![](./static/imgs/ODBS21cXELogger-Screenshot.png)
+
 
 **¡Listo!** Ya puedes conectarse desde tu IDE preferido a Oracle Database 21c Express Edition, ya puedes cerrar la terminal.
 
