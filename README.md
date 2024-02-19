@@ -73,8 +73,9 @@ docker start oracle-db
 # **VARIABLES DE CONEXIÓN**
 (Considera el puerto cambiado en caso de que lo hayas cambiado en el paso ***5***)
 
-- Rol: SYSDBA
+- Host: localhost
 - Port: 1521
+- Rol: SYSDBA
 - SID: XE
 - Username: sys
 - Password: SYS_DBA_ADMIN_UTN
