@@ -29,7 +29,7 @@ brew install colima
 - Ejecutar el siguiente comando una vez instalados:
 
 ```bash
-$ colima start --arch x86_64 --memory 4
+colima start --arch x86_64 --memory 4
 ```
 
 ## Ejecutar Contenedor en Docker
