@@ -13,13 +13,24 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 - Tener instalado [Docker Desktop](https://docs.docker.com/get-docker/)
 
 ## Requisitos extras en caso de MacOS
+
 - Instalar el gestor de paquetes [Homebrew](https://brew.sh/es/)
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 - Instalar con Homebrew [colima](https://formulae.brew.sh/formula/colima)
+
+```bash
+brew install colima
+```
+
 - Ejecutar el siguiente comando una vez instalados:
+
 ```bash
 $ colima start --arch x86_64 --memory 4
 ```
-
 
 ## Ejecutar Contenedor en Docker
 
@@ -32,11 +43,10 @@ _Se ejecuta cuando inicias el programa de Docker Desktop_
 _Si hay contexión con Docker sigue los siguientes pasos:_
 
 1. Descargar el proyecto desde el [repositorio de Github](https://github.com/iDylaan/docker-oracle-database-21c-xe)
-![](./static/imgs/DownloadPorject.png)
-**Descomprime el archivo descargado** (con esta carpeta nos referimos al proyecto)
+   ![](./static/imgs/DownloadPorject.png)
+   **Descomprime el archivo descargado** (con esta carpeta nos referimos al proyecto)
 
 2. Descargar [Oracle Database 21c Express Edition for Linux x64 (OL8)](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
-   
 3. Ubicar el archivo RPM descargado en tu proyecto:
    Una vez descargado el archivo `oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm`, deberás colocarlo en la carpeta raíz de tu proyecto. Esto permitirá que el `Dockerfile` lo utilice durante el proceso de construcción de la imagen.
    ![](./static/imgs/ODBS21cXE-Screenshot.png)
@@ -48,13 +58,17 @@ _Si hay contexión con Docker sigue los siguientes pasos:_
 ```bash
 docker build -t oracle-21c-xe .
 ```
+
 ![](./static/imgs/DockerBuildBASH.png)
 
 5. Ejecutar el contenedor por primera vez:
+
 ```bash
 docker run -d -p 1521:1521 --name oracle-db oracle-21c-xe
 ```
+
 El puerto predeterminado de Oracle Database es 1521, si necesitas cambiar el puerto porque ya esta ocupado en tu equipo colocalo en <port> en el siguiente comando
+
 ```bash
 docker run -d -p 1521:<port> --name oracle-db oracle-21c-xe
 ```
@@ -68,18 +82,18 @@ docker logs -f oracle-db
 **_Esto puede tardar varios minutos_**, pero debes esperar hasta que cargue por completo y veas algo como esto: <br />
 ![](./static/imgs/ODBS21cXELogger-Screenshot.png)
 
-
 **¡Listo!** Ya puedes conectarse desde tu IDE preferido a Oracle Database 21c Express Edition, ya puedes cerrar la terminal.
 
 7. Para iniciar nuevamente el contenedor
-_Esto se usa una vez detienes el contenedor y lo quieres volver a iniciar_
+   _Esto se usa una vez detienes el contenedor y lo quieres volver a iniciar_
 
 ```bash
 docker start oracle-db
 ```
 
 # **VARIABLES DE CONEXIÓN**
-(Considera el puerto cambiado en caso de que lo hayas cambiado en el paso ***5***)
+
+(Considera el puerto cambiado en caso de que lo hayas cambiado en el paso **_5_**)
 
 - Host: localhost
 - Port: 1521
