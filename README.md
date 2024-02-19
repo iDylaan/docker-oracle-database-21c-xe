@@ -7,10 +7,11 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 
 - Almenos 4 GB de RAM
 - Almenos 25 GB de almacenamiento disponible
-- Tener instalado WSL -> en caso de windows `wsl --install` ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
-- Tener instalado [Docker](https://docs.docker.com/get-docker/)
+- Tener instalado WSL
   - En Windows ([Guía](https://www.youtube.com/shorts/ddfLijQ1t88))
   - En MacOS ([Guía](https://www.youtube.com/watch?v=a30Enh1_aWI))
+- Tener instalado [Docker Desktop](https://docs.docker.com/get-docker/)
+
 
 ## Ejecutar Contenedor en Docker
 
