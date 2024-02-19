@@ -44,10 +44,13 @@ docker build -t oracle-21c-xe .
 ```
 ![](./static/imgs/DockerBuildBASH.png)
 
-5. Ejecutar el contenedor por primera vez
-
+5. Ejecutar el contenedor por primera vez:
 ```bash
 docker run -d -p 1521:1521 --name oracle-db oracle-21c-xe
+```
+El puerto predeterminado de Oracle Database es 1521, si necesitas cambiar el puerto porque ya esta ocupado en tu equipo colocalo en <port> en el siguiente comando
+```bash
+docker run -d -p 1521:<port> --name oracle-db oracle-21c-xe
 ```
 
 6. Revisar la inicialización de la base de datos
