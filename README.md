@@ -12,7 +12,7 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
   - En MacOS ([Guía](https://www.youtube.com/watch?v=a30Enh1_aWI))
 - Tener instalado [Docker Desktop](https://docs.docker.com/get-docker/)
 
-## Requisitos (MacOS)
+## Requisitos extras en caso de MacOS
 - Instalar el gestor de paquetes [Homebrew](https://brew.sh/es/)
 - Instalar con Homebrew [colima](https://formulae.brew.sh/formula/colima)
 - Ejecutar el siguiente comando una vez instalados:
