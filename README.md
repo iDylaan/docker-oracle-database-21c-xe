@@ -5,7 +5,7 @@ El tamaño de esta imagen es de aprox. 9.1 GB comprimida, ya que la BD se instal
 ## Prerequisitos
 
 - Almenos 4 GB de RAM
-- Al menos 25 GB de almacenamiento disponible
+- Almenos 25 GB de almacenamiento disponible
 - Tener instalado WSL -> en caso de windows `wsl --install`
 - Tener instalado [Docker](https://docs.docker.com/get-docker/)
 - Tener descargado [Oracle Database 21c Express Edition for Linux x64 ( OL8 )](https://www.oracle.com/mx/database/technologies/xe-downloads.html)
