@@ -143,6 +143,22 @@ sqlplus sys/SYS_DBA_ADMIN_UTN@XE as sysdba
 ```
 
 
+Iniciar como usuario ORACLE
+```bash
+su - oracle
+```
+
+
+Obtener el nombre del equipo
+```bash
+uname -n
+```
+
+
+
+
+
+
 # Referencias
 1. [fjtoscano.medium.com](https://fjtoscano.medium.com/instalar-oracle-database-xe-en-mac-m1-d5d2d17fc00c)
 2. [docs.oracle.com](https://docs.oracle.com/en/database/oracle/oracle-database/21/xeinl/installing-oracle-database-free.html#GUID-46EA860A-AAC4-453F-8EEE-42CC55A4FAD5)
